@@ -3,38 +3,360 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Kedai Kopi Nusantara</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
 
-body{
-background:#0f0f0f;
-color:white;
-}
-
 .hero{
-background-image:url('https://images.unsplash.com/photo-1509042239860-f550ce710b93');
+background:url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
 background-size:cover;
 background-position:center;
 }
 
-.fadeUp{
+.fade{
 opacity:0;
 transform:translateY(40px);
-transition:1s;
+transition:0.8s;
 }
 
-.fadeUp.show{
+.fade.show{
 opacity:1;
 transform:translateY(0);
 }
 
-.zoom:hover{
-transform:scale(1.05);
-transition:0.4s;
+</style>
+
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+<!-- NAVBAR -->
+
+<nav class="bg-white shadow-md fixed w-full z-50">
+
+<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+<h1 class="text-2xl font-bold text-amber-600">
+☕ Kedai Kopi
+</h1>
+
+<div class="space-x-8 hidden md:block font-medium">
+
+<a href="#home" class="hover:text-amber-600">Beranda</a>
+<a href="#about" class="hover:text-amber-600">Tentang</a>
+<a href="#menu" class="hover:text-amber-600">Menu</a>
+<a href="#gallery" class="hover:text-amber-600">Galeri</a>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- HERO -->
+
+<section id="home" class="hero h-screen flex items-center">
+
+<div class="bg-white/90 backdrop-blur-md p-10 rounded-xl max-w-xl ml-10 fade">
+
+<h1 class="text-4xl md:text-5xl font-bold mb-5 text-gray-900">
+Nikmati Aroma Kopi Terbaik
+</h1>
+
+<p class="text-gray-600 leading-relaxed">
+Kedai Kopi Nusantara menghadirkan pengalaman menikmati kopi premium dari berbagai daerah di Indonesia. Setiap cangkir diseduh dengan biji kopi pilihan dan teknik terbaik untuk menghasilkan rasa autentik.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- TENTANG -->
+
+<section id="about" class="py-20">
+
+<div class="max-w-5xl mx-auto px-6 text-center fade">
+
+<h2 class="text-3xl font-bold text-gray-900 mb-6">
+Tentang Kedai Kami
+</h2>
+
+<p class="text-gray-600 leading-relaxed">
+Kedai Kopi Nusantara merupakan tempat yang menghadirkan suasana nyaman untuk menikmati kopi berkualitas. Kami bekerja sama dengan petani kopi lokal dari berbagai daerah seperti Gayo, Toraja, dan Kintamani untuk menghadirkan cita rasa kopi terbaik. Dengan barista berpengalaman dan suasana kedai yang hangat, kami ingin memberikan pengalaman minum kopi yang berkesan bagi setiap pengunjung.
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- KEUNGGULAN -->
+
+<section class="bg-white py-20">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-14 fade">
+Kenapa Memilih Kedai Kami
+</h2>
+
+<div class="grid md:grid-cols-3 gap-10 text-center">
+
+<div class="fade">
+
+<h3 class="text-xl font-semibold mb-3">☕ Biji Kopi Premium</h3>
+
+<p class="text-gray-600 text-sm">
+Menggunakan biji kopi pilihan dari petani lokal Indonesia dengan kualitas terbaik.
+</p>
+
+</div>
+
+<div class="fade">
+
+<h3 class="text-xl font-semibold mb-3">👨‍🍳 Barista Profesional</h3>
+
+<p class="text-gray-600 text-sm">
+Kopi diseduh oleh barista berpengalaman yang memahami teknik penyeduhan terbaik.
+</p>
+
+</div>
+
+<div class="fade">
+
+<h3 class="text-xl font-semibold mb-3">🌿 Suasana Nyaman</h3>
+
+<p class="text-gray-600 text-sm">
+Tempat yang nyaman untuk bersantai, bekerja, atau berkumpul bersama teman.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- MENU -->
+
+<section id="menu" class="py-20 bg-gray-100">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-14 fade">
+Menu Best Seller
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<!-- MENU 1 -->
+
+<div class="bg-white rounded-xl shadow hover:shadow-lg transition fade">
+
+<img src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+class="h-52 w-full object-cover rounded-t-xl">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold mb-2">
+Espresso
+</h3>
+
+<p class="text-gray-600 text-sm">
+Kopi hitam pekat dengan rasa kuat dan aroma khas yang menjadi favorit pecinta kopi.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- MENU 2 -->
+
+<div class="bg-white rounded-xl shadow hover:shadow-lg transition fade">
+
+<img src="https://images.unsplash.com/photo-1523942839745-7848d5e9b1a7"
+class="h-52 w-full object-cover rounded-t-xl">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold mb-2">
+Cappuccino
+</h3>
+
+<p class="text-gray-600 text-sm">
+Perpaduan espresso, susu panas, dan foam lembut menghasilkan rasa creamy.
+</p>
+
+</div>
+
+</div>
+
+
+
+<!-- MENU 3 -->
+
+<div class="bg-white rounded-xl shadow hover:shadow-lg transition fade">
+
+<img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085"
+class="h-52 w-full object-cover rounded-t-xl">
+
+<div class="p-6">
+
+<h3 class="text-xl font-semibold mb-2">
+Latte
+</h3>
+
+<p class="text-gray-600 text-sm">
+Minuman kopi susu dengan tekstur lembut yang cocok dinikmati kapan saja.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- GALERI -->
+
+<section id="gallery" class="py-20">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-14 fade">
+Galeri Kedai
+</h2>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+<img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31"
+class="rounded-lg fade">
+
+<img src="https://images.unsplash.com/photo-1498804103079-a6351b050096"
+class="rounded-lg fade">
+
+<img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247"
+class="rounded-lg fade">
+
+<img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb"
+class="rounded-lg fade">
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-900 text-gray-300 py-12">
+
+<div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-10">
+
+<div>
+
+<h3 class="text-lg font-bold text-white mb-3">
+Kedai Kopi Nusantara
+</h3>
+
+<p class="text-sm">
+Tempat terbaik untuk menikmati kopi berkualitas dengan suasana nyaman.
+</p>
+
+</div>
+
+<div>
+
+<h3 class="text-lg font-bold text-white mb-3">
+Kontak
+</h3>
+
+<p class="text-sm">
+WhatsApp : 0895-7002-68700
+</p>
+
+<p class="text-sm">
+Email : kedai@kopi.com
+</p>
+
+</div>
+
+<div>
+
+<h3 class="text-lg font-bold text-white mb-3">
+Alamat
+</h3>
+
+<p class="text-sm">
+Jl. Kopi Nusantara No.10
+</p>
+
+<p class="text-sm mt-2">
+Instagram : @kedaikopi
+</p>
+
+</div>
+
+</div>
+
+<div class="text-center text-gray-400 text-sm mt-10">
+© 2026 Kedai Kopi Nusantara
+</div>
+
+</footer>
+
+
+
+<script>
+
+const elements = document.querySelectorAll(".fade");
+
+function animate(){
+
+elements.forEach(el=>{
+
+const top = el.getBoundingClientRect().top;
+
+const windowHeight = window.innerHeight;
+
+if(top < windowHeight - 100){
+
+el.classList.add("show");
+
 }
+
+});
+
+}
+
+window.addEventListener("scroll",animate);
+
+animate();
+
+</script>
+
+</body>
+</html>}
 
 </style>
 
