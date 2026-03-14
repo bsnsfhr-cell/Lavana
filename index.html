@@ -5,6 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>LAVANAA FLAGSHIP</title>
+  <!-- Favicon -->
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="shortcut icon" href="favicon.png">
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -25,6 +28,82 @@ transition:0.8s;
 .fade.show{
 opacity:1;
 transform:translateY(0);
+}
+
+  /* WhatsApp Button */
+
+.wa-button{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:14px 18px;
+border-radius:50px;
+font-weight:600;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+z-index:999;
+transition:0.3s;
+}
+
+.wa-button:hover{
+background:#1ebe5d;
+transform:scale(1.05);
+}
+
+  /* Responsive Layout */
+
+.container{
+max-width:1200px;
+margin:auto;
+padding:0 20px;
+}
+
+/* Tablet */
+
+@media (max-width:1024px){
+
+.grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+h1{
+font-size:28px;
+}
+
+h2{
+font-size:24px;
+}
+
+.grid{
+grid-template-columns:1fr;
+}
+
+section{
+padding:60px 20px;
+}
+
+}
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+h1{
+font-size:24px;
+}
+
+h2{
+font-size:20px;
+}
+
 }
 
 </style>
@@ -429,6 +508,15 @@ window.addEventListener("scroll",animate);
 animate();
 
 </script>
+  <!-- WhatsApp Button -->
+
+<a href="https://wa.me/081224049300?text=Halo%20saya%20ingin%20bertanya%20tentang%20menu%20di%20LAVANAA%20FLAGSHIP"
+class="wa-button"
+target="_blank">
+
+💬 Konsultasi WhatsApp
+
+</a>
 
 </body>
 </html>
